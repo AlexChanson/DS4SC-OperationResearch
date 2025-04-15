@@ -20,6 +20,11 @@ Heuristics may be written in any programming language, but you must include a me
 ```
 team_token;instance_id;1,0,2,3
 ```
+#### Source code grading
+Note that the grading of your sources **will include** the easy of deployment. 
+For example using python libraries without providing a requirements.txt will be penalized. 
+If you use a compiled language please include a statically linked binary compatible with Windows 11 or include a makefile working on any Linux (arm64) distribution.
+
 ### Evaluating your solution
 The optimal and baseline objective values for the following instances are given: `f1_tap_3_400.dat; f1_tap_9_400.dat; f4_tap_0_20.dat; f4_tap_1_400.dat; f4_tap_4_400.dat; tap_10_100.dat; tap_11_250.dat; tap_13_150.dat; tap_14_400.dat; tap_15_60.dat`.
 To evaluate your algorithm (or the baseline) you can compute the relative gap to the optimal solution's objective : `100 * ( opt_obj - your_obj ) / opt_obj`
