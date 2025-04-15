@@ -55,11 +55,11 @@ You should have Maven installed and an updated JDK.
 
 Download Project
 ```shell
-git clone https://github.com/AlexChanson/RechercheOperationnelle-M1-BDMA
+git clone https://github.com/AlexChanson/DS4SC-OperationResearch
 ```
 Move to project and test build
 ```shell
-cd .\RechercheOperationnelle-M1-BDMA\
+cd .\DS4SC-OperationResearch\
 mvn package
 ```
 
@@ -78,7 +78,7 @@ git config --global http.proxy http://proxy:3128
 
 Download Project
 ```shell
-git clone https://github.com/AlexChanson/RechercheOperationnelle-M1-BDMA
+git clone https://github.com/AlexChanson/DS4SC-OperationResearch
 ```
 
 Setup maven (Only use last line if you have already downloaded)
@@ -104,7 +104,7 @@ $Env:JAVA_HOME = "C:\Program Files\Java\jdk1.8.0_341\"
 
 Move to project and test build
 ```shell
-cd .\RechercheOperationnelle-M1-BDMA\
+cd .\DS4SC-OperationResearch\
 mvn package
 ```
 
