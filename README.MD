@@ -11,11 +11,23 @@ A detailed explanation is available [here](https://hal.archives-ouvertes.fr/hal-
 
 The baseline strategy you should beat is simply sorting queries by interestingness and building the sequence until one constraint is violated.
 ## Expected work
-This is a 2-person 'project' that will encompass the 3 lab sessions dedicated to OR. Your goal is to propose one or more heuristic(s) to solve the TAP problem and implement them following the TAPSolver Interface.
+This is a 2-person 'hackathon' that will encompass the lab 'day' dedicated to OR. Your goal is to propose one or more heuristic(s) to solve the TAP problem and implement them following the TAPSolver Interface.
 You will document your work and reasoning behind your algorithm(s) in a lab report. 
 ### Grading
 Each 2-person team will be graded on a 2 or 3 pages (hard limit) report, the code quality, and the performance of the heuristics (runtime, objective).
 Your heuristics will be tested on other instances as well as the 5 provided in this repository. 
+Heuristics may be written in any programming language, but you must include a method design to output to the following format :
+```
+nEtu
+instance_id
+timeBudget       # the time consumed by running the query in your solution
+distanceBudget   # the query sequence overall distance 
+1,0,2,3          # the sequence
+```
+### Evaluating your solution
+The optimal and baseline objective values for the following instances are given: `f1_tap_3_400.dat; f1_tap_9_400.dat; f4_tap_0_20.dat; f4_tap_1_400.dat; f4_tap_4_400.dat; tap_10_100.dat; tap_11_250.dat; tap_13_150.dat; tap_14_400.dat; tap_15_60.dat`.
+To evaluate your algorithm (or the baseline) you can compute the relative gap to the optimal solution's objective : `100 * ( opt_obj - your_obj ) / opt_obj`
+To do so you may use `sol_interest` (Python) or the `Ojectives` class (Java) or write your own code.
 
 ## Exemple (Naive Solution)
 Create a class `TestNaif` that implements the `TAPSolver` interface. 
@@ -98,5 +110,15 @@ mvn package
 java -cp target/TP-RO-M1-BDMA-1.0-SNAPSHOT.jar com.alexscode.teaching.Main
 ```
 
-
-
+## .dat format
+The instances are provided in text format as shown bellow, note that in this format queries are identified implicitly by their position :
+```
+3
+0.3 0.5 0.7
+12 14 23
+0 1 3
+1 0 4
+3 4 0
+```
+The first line is the number of queries, the second their interestingness, the third the time required to run them. Finally the distance matrix occupies the remaining lines.
+For example q_0 has an interestingness of 0.3 a cost (time) of 12 and it's distance to q_2 is 3.

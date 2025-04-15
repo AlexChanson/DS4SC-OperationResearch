@@ -1,4 +1,4 @@
-# * pas optimal solution du solveur au bout de 1h
+# * pas optimal solution du solveur au bout de 1h, gap < 5%
 instance;objective_value
 f1_tap_3_400.dat;94.63
 f1_tap_9_400.dat;94.36
