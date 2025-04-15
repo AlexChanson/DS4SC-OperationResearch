@@ -1,4 +1,4 @@
-# Recherche Operationnelle - M1 BDMA
+# Operation Research challenge - DS4SC 
 ## Subject
 During classes, you have studied two typical Operation Research problems, the Knapsack Problem (KP) and the Travelling Salesman Problem (TSP).
 We will now study a problem that takes aspects from both KP and TSP. This problem stems from the need to automate Exploratory Data Analysis (EDA), 
