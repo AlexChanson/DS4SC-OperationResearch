@@ -18,7 +18,7 @@ Each 2-person team will be graded on a 2 or 3 pages (hard limit) report, the cod
 Your heuristics will be tested on other instances as well as the 5 provided in this repository. 
 Heuristics may be written in any programming language, but you must include a method designed to output to the following csv format (Team token / Id of the instance / Your solution as a sequence of queries):
 ```
-team_token;instance_id;1,0,2,3
+student_id;instance_id;1,0,2,3
 ```
 #### Source code grading
 Note that the grading of your sources **will include** the easy of deployment. 
@@ -29,8 +29,6 @@ If you use a compiled language please include a statically linked binary compati
 The optimal and baseline objective values for the following instances are given: `f1_tap_3_400.dat; f1_tap_9_400.dat; f4_tap_0_20.dat; f4_tap_1_400.dat; f4_tap_4_400.dat; tap_10_100.dat; tap_11_250.dat; tap_13_150.dat; tap_14_400.dat; tap_15_60.dat`.
 To evaluate your algorithm (or the baseline) you can compute the relative gap to the optimal solution's objective : `100 * ( opt_obj - your_obj ) / opt_obj`
 To do so you may use `sol_interest` (Python) or the `Ojectives` class (Java) or write your own code.
-#### Online evaluation
-Alternatively to taunt your opponents you may enter your submission into the competition server : hackathon.lifat.fr
 
 ## Exemple (Naive Solution)
 Create a class `TestNaif` that implements the `TAPSolver` interface. 
