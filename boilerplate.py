@@ -18,7 +18,7 @@ class TapInstance:
 
     def sol_len(self, sol):
         d = 0
-        for i in range(len(sol-1)):
+        for i in range(len(sol)-1):
             d += self.dist[sol[i]][sol[i+1]]
         return d
 
