@@ -83,7 +83,7 @@ Setup maven (Only use last line if you have already downloaded)
 ```
 wget https://dlcdn.apache.org/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.zip -UseBasicParsing -O maven.zip
 Expand-Archive .\maven.zip .
-$env:Path += 'U:\apache-maven-3.8.8\bin'
+$env:Path += ';U:\apache-maven-3.8.8\bin'
 ```
 
 Set Proxy for maven
