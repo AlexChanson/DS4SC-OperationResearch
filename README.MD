@@ -89,7 +89,7 @@ $env:Path += 'U:\apache-maven-3.8.8\bin'
 Set Proxy for maven
 ```shell
 mkdir $Env:userprofile\.m2
-cp .\RechercheOperationnelle-M1-BDMA\config\settings.xml $Env:userprofile\.m2\settings.xml
+cp .\DS4SC-OperationResearch\config\settings.xml $Env:userprofile\.m2\settings.xml
 ```
 
 
